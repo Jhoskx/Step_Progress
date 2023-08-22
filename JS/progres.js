@@ -15,7 +15,30 @@ next.addEventListener("click", () => {
   update();
 });
 
+next1.addEventListener("click", () => {
+  currentActive++;
+  if (currentActive > circles.length) currentActive = circles.length;
+  update();
+});
+next2.addEventListener("click", () => {
+  currentActive++;
+  if (currentActive > circles.length) currentActive = circles.length;
+  update();
+});
+
 prev.addEventListener("click", () => {
+  currentActive--;
+  if (currentActive < 1) currentActive = 1;
+  update();
+});
+
+prev1.addEventListener("click", () => {
+  currentActive--;
+  if (currentActive < 1) currentActive = 1;
+  update();
+});
+
+prev2.addEventListener("click", () => {
   currentActive--;
   if (currentActive < 1) currentActive = 1;
   update();
